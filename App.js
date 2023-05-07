@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import Login from './app/screens/Login';
+import Sign_in from './app/screens/Sign_in'
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
@@ -22,6 +23,8 @@ export default function App() {
         options={{headerShown: false}}
       />
       <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
+      <Stack.Screen name="Sign_in" component={Sign_in} options={{headerShown: false}}/>
+
     </Stack.Navigator>
   </NavigationContainer>
   );

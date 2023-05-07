@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, TextInput, View } from 'react-native';
+import { Button, TextInput, View, Pressable  } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import { StyleSheet, Text, Image, Animated } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -68,9 +68,11 @@ function Login({navigation}) {
 
 
 
-                    <View style={styles.button}>
-                        <Text style={styles.text}>Sign up</Text>
-                    </View>
+                    <Pressable  style={styles.button} onPress={()=>{
+                         navigation.navigate('Sign_in')
+                    }}>
+                        <Text  style={styles.text}>Sign up</Text>
+                    </Pressable>
                 </View>    
        </LinearGradient>
     );
