@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, TextInput, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import { StyleSheet, Text, Image, Animated } from 'react-native';
@@ -6,7 +6,6 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 
 function Login({navigation}) {
-
     return (
        <LinearGradient
        colors={['rgba(25,25,25,1)','rgba(152,13,237,1)']}
@@ -19,43 +18,22 @@ function Login({navigation}) {
 
                 </View>    
                 <View
-                style={styles.loginArea}>
-                    <View style={styles.center}>
-                    <Text style={[styles.loginArea.Text,styles.loginArea.Title]}>Hello</Text>
-                    <Text style={styles.loginArea.Text}>Ready to log in? Let's get started!</Text>
-                    </View>
-                    <View style={styles.loginArea.inputArea}>
-                        <Text>Username</Text>
-                        <TextInput style={styles.imp} placeholder="Enter your Username"></TextInput>
-                    </View>
-                    <View style={styles.loginArea.inputArea}>
-                        <Text>Password</Text>
-                        <TextInput style={styles.imp} placeholder="Enter your Password"></TextInput>
-                        <Text style={{textAlign: "right"}}>Forgot Password?</Text>
+                style={styles.SignUpArea}>
+                    <View style={[styles.center]}>
+                        <Text style={styles.SignUpArea.Title}>SIGN UP</Text>
                     </View>
 
-                    <View style={styles.button}>
-                        <Text style={styles.text}>Sign in</Text>
+                    <View style={{flexDirection: "row",justifyContent: "space-evenly",marginTop: 10}}>
+                        <View style={{marginLeft:-70}}>
+                            <Text>First Name</Text>
+                            <TextInput style={styles.impSm} placeholder='First name' ></TextInput>
+                        </View>
+                        <View>
+                            <Text>Last Name</Text>
+                            <TextInput style={styles.impSm} placeholder='Last name'></TextInput>
+                        </View>
                     </View>
-                    <View style={styles.center}><Text style={styles.loginArea.Text}>Or continue with</Text></View>
-                    
-                    <View style={{
-                        flexDirection: "row",
-                        justifyContent: "space-evenly",
-                        marginTop: 20
-                    }}>
-                        
-                    
-                    </View>
-                    {/* <Image source={require('../assets/googlebutton.png')} style={styles.linkbutton}/> */}
 
-
-
-
-
-                    <View style={styles.button}>
-                        <Text style={styles.text}>Sign up</Text>
-                    </View>
                 </View>    
        </LinearGradient>
     );
@@ -75,7 +53,7 @@ const styles = StyleSheet.create(
             height: undefined,
             aspectRatio: 1.5,
         },
-        loginArea:{
+        SignUpArea:{
             flex: 1,
             backgroundColor: 'white',
             borderTopLeftRadius: 50,
@@ -86,7 +64,8 @@ const styles = StyleSheet.create(
             },
             Title:{
                 paddingTop:20,
-                fontSize:32
+                fontSize:32,
+                fontWeight: 'bold',
             },
             inputArea:{
                 paddingTop:15,
@@ -102,12 +81,19 @@ const styles = StyleSheet.create(
         center:{
             alignItems: 'center', 
         },
+        impSm:{
+            borderColor: "gray",
+            width: "180%",
+            borderWidth: 1,
+            borderRadius: 10,
+            paddingLeft: 10,
+        },
         imp:{
             borderColor: "gray",
             width: "100%",
             borderWidth: 1,
             borderRadius: 10,
-            padding: 10,
+            paddingLeft: 10,
         },
         button:{
             alignItems: 'center',
