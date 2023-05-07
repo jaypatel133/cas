@@ -37,6 +37,36 @@ function Login({navigation}) {
                     <View style={styles.button}>
                         <Text style={styles.text}>Sign in</Text>
                     </View>
+                    <View style={styles.center}><Text style={styles.loginArea.Text}>Or continue with</Text></View>
+                    
+                    <View style={{
+                        flexDirection: "row",
+                        justifyContent: "space-evenly",
+                        marginTop: 20
+                    }}>
+                        
+                    <LinearGradient
+                        colors={['rgba(25,25,25,0.5)','rgba(255,255,255,1)']}
+                        start={{x: -1.5, y: 0}}
+                        end={{x: 1, y: 1}}
+                        style={{height: 52,width: 70,paddingLeft: 10,borderRadius:8}}><Image source={require('../assets/googlebutton.png')} style={styles.linkbutton}/></LinearGradient>  
+                    <LinearGradient
+                        colors={['rgba(25,25,25,0.5)','rgba(255,255,255,1)']}
+                        start={{x: -1.5, y: 0}}
+                        end={{x: 1, y: 1}}
+                        style={{height: 52,width: 70,paddingLeft: 10,borderRadius:8}}><Image source={require('../assets/applebutton.png')} style={styles.linkbutton}/></LinearGradient> 
+                    <LinearGradient
+                        colors={['rgba(25,25,25,0.5)','rgba(255,255,255,1)']}
+                        start={{x: -1.5, y: 0}}
+                        end={{x: 1, y: 1}}
+                        style={{height: 52,width: 70,paddingLeft: 10,borderRadius:8}}><Image source={require('../assets/facebookbutton.png')} style={styles.linkbutton}/></LinearGradient>  
+
+                    </View>
+                    {/* <Image source={require('../assets/googlebutton.png')} style={styles.linkbutton}/> */}
+
+
+
+
 
                     <View style={styles.button}>
                         <Text style={styles.text}>Sign up</Text>
@@ -51,6 +81,7 @@ const styles = StyleSheet.create(
         imgDiv:{
             justifyContent: 'center', 
             alignItems: 'center', 
+            
             flex: 0.5,
             // backgroundColor: "black",
         },
@@ -111,6 +142,12 @@ const styles = StyleSheet.create(
             letterSpacing: 0.25,
             color: 'white',
           },
+
+        linkbutton: {
+             width: 65,
+             height: 48,
+            aspectRatio: 1, 
+        }  
     }
 )
 
