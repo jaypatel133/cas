@@ -46,7 +46,7 @@ function Login({navigation}) {
                         </View>
                         <View>
                             <Text>Gender</Text>
-                            <View style={{borderColor: "gray",borderWidth: 1,borderRadius: 10,height:30}}>
+                            <View style={{borderColor: "gray",borderWidth: 1,borderRadius: 10,height:50}}>
                             <Picker
                                 selectedValue={gender}
                                 onValueChange={(value, index) => setGender(value)}
@@ -171,14 +171,14 @@ const styles = StyleSheet.create(
             width: "180%",
             borderWidth: 1,
             borderRadius: 10,
-            paddingLeft: 10,
+            padding: 10,
         },
         imp:{
             borderColor: "gray",
             width: "100%",
             borderWidth: 1,
             borderRadius: 10,
-            paddingLeft: 10,
+            padding: 10,
         },
         button:{
             alignItems: 'center',
