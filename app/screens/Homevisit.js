@@ -1,13 +1,13 @@
 import React from 'react';
 import {View, TextInput} from 'react-native';
-import { StyleSheet, Text, Image, Animated } from 'react-native';
+import { StyleSheet, Text, Image, Animated, ScrollView } from 'react-native';
 
 function Homevisit(props) {
     return (
-        <View>
+        <ScrollView>
               <View style={styles.Homevisitbox}>
 
-                <Text style={{color:'white',fontSize:'30',fontWeight:'bold'}}>Home Visit</Text>
+                <Text style={{color:'white',fontSize:30,fontWeight:'bold'}}>Home Visit</Text>
                 
               </View>  
 
@@ -27,7 +27,7 @@ function Homevisit(props) {
 
              <View style={styles.loginArea.inputArea}>
                         <Text>Age</Text>
-                        <TextInput style={styles.imp} placeholder="Enter your Age"></TextInput>
+                        <TextInput style={styles.imp} inputMode='numeric' placeholder="Enter your Age"></TextInput>
              </View>
 
              <View style={styles.loginArea.inputArea}>
@@ -70,7 +70,7 @@ function Homevisit(props) {
                         <TextInput style={styles.imp} placeholder="Enter your E-mail"></TextInput>
              </View>
 
-        </View>
+        </ScrollView>
     );
 }
 
