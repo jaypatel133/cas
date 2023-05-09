@@ -16,8 +16,59 @@ function Homevisit(props) {
             <View style={styles.loginArea.inputArea}>
                         <Text>Name</Text>
                         <TextInput style={styles.imp} placeholder="Enter your name"></TextInput>
-                    </View>
+            </View>
 
+
+             <View style={styles.loginArea.inputArea}>
+                        <Text>Contact No</Text>
+                        <TextInput style={styles.imp} placeholder="Enter your Contact number"></TextInput>
+             </View>
+
+
+             <View style={styles.loginArea.inputArea}>
+                        <Text>Age</Text>
+                        <TextInput style={styles.imp} placeholder="Enter your Age"></TextInput>
+             </View>
+
+             <View style={styles.loginArea.inputArea}>
+                        <Text>Height</Text>
+                        <TextInput style={styles.imp} placeholder="Enter your Height"></TextInput>
+             </View>
+
+             <View style={styles.loginArea.inputArea}>
+                        <Text>Weight</Text>
+                        <TextInput style={styles.imp} placeholder="Enter your weight"></TextInput>
+             </View>
+
+             <View style={styles.loginArea.inputArea}>
+                        <Text>Address</Text>
+                        <TextInput style={styles.imp} multiline={true} placeholder="Enter your Address"></TextInput>
+             </View>
+
+             <View style={styles.loginArea.inputArea}>
+                        <Text>State</Text>
+                        <TextInput style={styles.imp} placeholder="Enter your State"></TextInput>
+             </View>
+
+             <View style={styles.loginArea.inputArea}>
+                        <Text>City</Text>
+                        <TextInput style={styles.imp} placeholder="Enter your City"></TextInput>
+             </View>
+
+             <View style={styles.loginArea.inputArea}>
+                        <Text>State</Text>
+                        <TextInput style={styles.imp} placeholder="Enter your State"></TextInput>
+             </View>
+
+             <View style={styles.loginArea.inputArea}>
+                        <Text>Pincode</Text>
+                        <TextInput style={styles.imp} placeholder="Enter your Pincode"></TextInput>
+             </View>
+             
+             <View style={styles.loginArea.inputArea}>
+                        <Text>Email</Text>
+                        <TextInput style={styles.imp} placeholder="Enter your E-mail"></TextInput>
+             </View>
 
         </View>
     );
