@@ -30,7 +30,7 @@ function Login({navigation}) {
                     </View>
                     <View style={styles.loginArea.inputArea}>
                         <Text>Password</Text>
-                        <TextInput style={styles.imp} placeholder="Enter your Password"></TextInput>
+                        <TextInput style={styles.imp} secureTextEntry={true} placeholder="Enter your Password"></TextInput>
                         <Text style={{textAlign: "right"}}>Forgot Password?</Text>
                     </View>
 
