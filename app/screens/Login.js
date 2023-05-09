@@ -69,7 +69,7 @@ function Login({navigation}) {
 
 
                     <Pressable  style={styles.button} onPress={()=>{
-                         navigation.navigate('Sign_in')
+                         navigation.navigate('Homevisit')
                     }}>
                         <Text  style={styles.text}>Sign up</Text>
                     </Pressable>
