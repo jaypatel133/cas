@@ -15,7 +15,7 @@ function WelcomeScreen({navigation}) {
 
     useEffect(()=> {
       setTimeout(function(){
-        navigation.navigate('Login')
+        navigation.navigate('Homepage')
    
       }, 4000);
     },[]) 

@@ -21,7 +21,7 @@ function Homevisit(props) {
 
              <View style={styles.loginArea.inputArea}>
                         <Text>Contact No</Text>
-                        <TextInput style={styles.imp} placeholder="Enter your Contact number"></TextInput>
+                        <TextInput style={styles.imp} inputMode='numeric' placeholder="Enter your Contact number"></TextInput>
              </View>
 
 
@@ -32,12 +32,12 @@ function Homevisit(props) {
 
              <View style={styles.loginArea.inputArea}>
                         <Text>Height</Text>
-                        <TextInput style={styles.imp} placeholder="Enter your Height"></TextInput>
+                        <TextInput style={styles.imp} inputMode='numeric' placeholder="Enter your Height"></TextInput>
              </View>
 
              <View style={styles.loginArea.inputArea}>
                         <Text>Weight</Text>
-                        <TextInput style={styles.imp} placeholder="Enter your weight"></TextInput>
+                        <TextInput style={styles.imp} inputMode='numeric' placeholder="Enter your weight"></TextInput>
              </View>
 
              <View style={styles.loginArea.inputArea}>
@@ -62,12 +62,12 @@ function Homevisit(props) {
 
              <View style={styles.loginArea.inputArea}>
                         <Text>Pincode</Text>
-                        <TextInput style={styles.imp} placeholder="Enter your Pincode"></TextInput>
+                        <TextInput style={styles.imp} inputMode='numeric' placeholder="Enter your Pincode"></TextInput>
              </View>
              
              <View style={styles.loginArea.inputArea}>
                         <Text>Email</Text>
-                        <TextInput style={styles.imp} placeholder="Enter your E-mail"></TextInput>
+                        <TextInput style={styles.imp} inputMode='email' placeholder="Enter your E-mail"></TextInput>
              </View>
 
         </ScrollView>
